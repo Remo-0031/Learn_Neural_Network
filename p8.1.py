@@ -8,4 +8,4 @@ class_targets = [0, 1, 1]
 
 neg_loss = -np.log(softmax_outputs[range(len(softmax_outputs)), class_targets])
 average_loss = np.mean(neg_loss)
-print(average_loss)
+print(neg_loss)
